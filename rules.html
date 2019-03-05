@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <title>Civilization Simulation</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="icon" type="image/png" href="CivLogo.png">
+    <link rel="stylesheet" href="app.css">
+    <style>
+      table, th, td {
+        border: 1px solid white;
+        border-collapse: collapse;
+        text-align: center;
+        transition: 0.3s;
+      }
+      th{
+        font-size: 25px;
+      }
+      th, td{
+        height: 50px;
+      }
+      td:hover{
+        height: 70px;
+        transition: 0.3s;
+      }
+      img:hover{
+        cursor:pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="titleBar">
+      <img src="CivLogo.png" onclick="location.href='index.html';"><button class="titleBtn" onclick="location.href='calc.html';">Calculator</button><button class="titleBtn" onclick="location.href='rules.html';">Rules</button><button class="titleBtn"onclick="location.href='class.html';">Class Information</button>
+    </div>
+	<h2>Starting Out:</h2>
+	<ul>
+		<li>Find out who out of your class is going to be a leader (there needs to be exactly 6 people)</li>
+		<li>WARNING: Some people may already be leaders, check the Class Information tab to find out!</li>
+		<li>After leaders are chosen, people who aren't leaders must flock to a leader (try to distribute the non-leaders as evenly as possible)</li>
+		<li>Now, in order of thos on the list of leaders, pick a country! Be warned though, countries have different strengths and weaknesses</li>
+		<li>After every leader has chosen their civilization, have them email me: their civilization, a new civilization name, a summary of what their civilization is about<br>email me at daniel.krawciw@s.stemk12.org</li>
+		<li>Every civilization now recieves 5 gold and what their civization would earn in one turn<br>You can find how much one would earn in one turn by going to the Calculator tab, and adding your civilization's bonus (if it has one)</li>
+	</ul>
+	<h3>Watch this short video on general rules:</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yShadjtASaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <table align="center" width=100%>
+      <tr>
+        <th>Civilization</th>
+        <th>Bonuses</th>
+      </tr>
+        <td>England</td>
+        <td>+3 Combat strength when sailing</td>
+      <tr>
+        <td>Ottoman Empire</td>
+        <td>The spread of Islam gives their land units +3 strength</td>
+      </tr>
+        <td>Zulu</td>
+        <td>Starts with all of Africa<br>Extremely far behind technologically</td>
+      <tr>
+        <td>Cherokee</td>
+        <td>Starts with all of North America<br>Extremely far behind technologicaly</td>
+      </tr>
+        <td>Prussia</td>
+        <td>+3 production every turn</td>
+      <tr>
+        <td>Sweden</td>
+        <td>+1 gold, 2 production per turn.</td>
+      </tr>
+        <td>Austria</td>
+        <td>Starts as the Holy Roman Emperor, +2 combat strength.</td>
+      <tr>
+        <td>Portugal</td>
+        <td>+2 tiles when sailing<br>+1 gold when trading with 2 civilizations</td>
+      </tr>
+        <td>Russia</td>
+        <td>+3 Unit strength</td>
+      <tr>
+        <td>France</td>
+        <td>+1 combat strength, +2 gold per turn</td>
+      </tr>
+        <td>Japan</td>
+        <td>+1 production +2 combat strength</td>
+      <tr>
+        <td>Poland</td>
+        <td>+1 gold from every 2 trades, and +2 gold per turn</td>
+      </tr>
+        <td>Spain</td>
+        <td>+2 gold by trading with 3 civilizations</td>
+      <tr>
+        <td>India</td>
+        <td>The Caste system gives India +4 production per turn<br>India starts out under Britain's control</td>
+      </tr>
+        <td>China</td>
+        <td>+2 production per turn and +1 combat strength</td>
+      <tr>
+        <td>Italy</td>
+	<td>The indulgences collected by the Catholic church gives Italy +4 gold per turn<br>Italy also has the power to crown the Holy Roman Emporer</td>
+    </table>
+    <br>
+    <h2>Possible Buildings:</h2>
+    <br>
+    <table width="100%">
+	<tr>
+		<th>Buildings</th>
+		<th>Bonuses</th>
+		<th>Costs</th>
+	</tr>
+	<tr>
+		<td>Barracks</td>
+		<td>Barracks decreases the cost of units by 20%</td>
+		<td>30 Gold</td>
+	</tr>
+	<tr>
+		<td>Forge</td>
+		<td>Increases the yield of production by +3 every turn</td>
+		<td>20 Gold</td>
+	</tr>
+	<tr>
+                <td>Walls</td>
+                <td>Increases the tile strength of the 6 tiles surrounding your city, along with the city itself by +3 strength</td>
+                <td>50 Gold</td>
+        </tr>
+	<tr>
+                <td>Mines</td>
+                <td>Allows one to utilize a minable resource in a specific tile</td>
+                <td>20 Gold</td>
+        </tr>
+	<tr>
+                <td>Stables</td>
+                <td>Increases production by +1 yield, and increases combat strength of certain units (the unit will indicate if applicable)</td>
+                <td>30 Gold</td>
+        </tr>
+	<tr>
+                <td>Shipyard</td>
+                <td>Increases trade from ocean +1 gold, and allows ship units to take 20% less prodcution to produce.</td>
+                <td>40 Gold</td>
+        </tr>
+	<tr>
+                <td>Common Market</td>
+                <td>Increases yield of gold +1</td>
+                <td>35 Gold</td>
+        </tr>
+    </table>
+    <br>
+    <h2>Special Buildings:</h2>
+    <br>
+    <ul>
+	<li>Unlike normal buildings, there are tiers to special buildings</li>
+	<li>Also, when you start building a special building, you can not switch to a different type if special building</li>
+	<li>Once you have completed the tier ladder for a specific special building though, you can move on to a different one.</li>
+	<li>Also, with special buildings, you can only pick one building upgrade for each tier of building</li>
+    </ul>
+    <h2>Religous:</h2>
+    <table>
+	<tr>
+                <th>Tier</th>
+                <th>Information</th>
+                <th>Cost</th>
+        </tr>
+        <tr>
+                <td>1 - Temple</td>
+                <td>Enables you to pick the religion of your country and recieve the according positive and negative affects</td>
+                <td>30 Gold</td>
+        </tr>
+	<tr>
+		<td>2 - Church</td>
+		<td>Enables consessions to earn an extra 5 gold every turn</td>
+		<td>40 Gold</td>
+	</tr>
+	<tr>
+		<td>3 - National Church</td>
+		<td>Due to the size, this temple generates 40 gold per turn</td>
+		<td>150 gold</td>
+	</tr>
+	<tr>
+		<td>2 - Reform a Church</td>
+		<td>You create a new version of this religion (this makes you an enemy of the original religion, but the people who own the holy city of that religion). Choose 1 bonus, and 3 negative effects for your new-ish religion (talk to the game master about bonuses and negatives).</td>
+		<td>50 Gold</td>
+	</tr>
+	<tr>
+                <td>3 - Create a Holy City</td>
+                <td>You generate 40 gold per turn from the holy city, and you remove 2 negative effects of your religion.</td>
+                <td>200 Gold</td>
+        </tr>
+	<tr>
+                <td>2 - Enforce Religion with Military</td>
+		<td>Gain a strength bonus of +2 for all military units, and become peramnent allies with the owner of the Holy City of your religion</td>
+                <td>50 Gold</td>
+        </tr>
+	<tr>
+                <td>3 - Inquisitor Civilization</td>
+                <td>Your strength bonus increases to +6, no longer pay maintenance for units. All civilizations with differing religions are now automatically enemies of the state.</td>
+                <td>150 Gold</td>
+        </tr>
+    </table>
+    <br>
+    <h2>Military:</h2>
+    <br>
+    <table>
+	<tr>
+		<th>Tier</th>
+		<th>Information</th>
+		<th>Cost</th>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+    </table>
+    <br>
+    <h2>Economic:</h2>
+    <br>
+    <table>
+        <tr>
+                <th>Tier</th>
+                <th>Information</th>
+                <th>Cost</th>
+        </tr>
+        <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+        </tr>
+    </table>
+    <br>
+    <h2>Scientific:</h2>
+    <br>
+    <table>
+        <tr>
+                <th>Tier</th>
+                <th>Information</th>
+                <th>Cost</th>
+        </tr>
+        <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+        </tr>
+    </table>
+    <script>
+	var img = document.querySelector("img");
+
+        img.addEventListener("click", function(){
+            self.location = "index.html";
+        });
+    </script>
+  </body>
+</html>
