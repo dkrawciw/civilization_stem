@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <title>Civilization Simulation</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="icon" type="image/png" href="CivLogo.png">
+    <link rel="stylesheet" href="app.css">
+    <style>
+	.inp{
+		border: 1px solid white;
+		background: none;
+		color: white;
+		padding: 10px;
+		border-radius: 20px;
+		font-size: 20px;
+		text-align: center;
+		width: 97%;
+		outline: none;
+	}
+	#btnSubmit{
+		font-size: 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+	}
+  #btnSubmit:hover{
+    border: 1px solid #FFBC42;
+  }
+    </style>
+  </head>
+  <body>
+    <div class="titleBar">
+      <img src="CivLogo.png" onclick="location.href='index.html';"><button class="titleBtn" onclick="location.href='calc.html';">Calculator</button><button class="titleBtn" onclick="location.href='rules.html';">Rules</button><button class="titleBtn"onclick="location.href='class.html';">Class Information</button>
+    </div>
+      <div>
+        <br><label for="inp1">Number of Cities:</label><br>
+        <input type="number" class="inp" id="inp1" value="0" min="0">
+	      <br><br><br><label for="inp2">Production Per Turn:</label><br>
+        <input type="number" class="inp" id="inp2" value="0" min="0">
+	      <br><br><br><label for="inp3">Outside Money:</label><br>
+        <input type="number" class="inp" id="inp3" value="0" min="0">
+        <br>
+      </div>
+    <br>
+    <button id="btnSubmit">Submit</button>
+    <br>
+    <h2 id="h2"></h2>
+  <script>
+        var img = document.querySelector("img");
+
+        img.addEventListener("click", function(){
+            self.location = "index.html";
+        });
+        var input1 = document.querySelector("#inp1");
+        var input2 = document.querySelector("#inp2");
+        var input3 = document.querySelector("#inp3");
+        var submit = document.querySelector("#btnSubmit");
+        var place = document.querySelector("#h2");
+
+        submit.addEventListener("click", function(){
+          var totalGold = 2 * Math.sqrt(parseInt(input1.value) * parseInt(input2.value)) + parseInt(input3.value);
+          place.textContent = "Gold this turn: " + Math.round(totalGold);
+        });
+  </script>
+  </body>
+</html>
