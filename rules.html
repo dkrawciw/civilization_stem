@@ -18,19 +18,65 @@
       }
       th, td{
         height: 50px;
+        transition: all 0.3s;
       }
       td:hover{
-        height: 70px;
-        transition: 0.3s;
+        background-color: white;
+        color: #003554;
       }
       img:hover{
         cursor:pointer;
+      }
+      .toc{
+        border-radius: 20px;
+        width: 78%;
+        margin: 5% auto;
+        border: 1px solid white;
+        color: #003554;
+        background-color: white;
+        letter-spacing: 1px;
+      }
+      .smallDiv{
+        border: 1px solid white;
+        border-radius: 40px;
+        width: 30%;
+        margin: 0 auto;
+        margin-top: 1%;
+        padding: 1%;
+        transition: all 0.3s;
+      }
+      .smallDiv:hover{
+        background-color: white;
+        color: #003554;
+      }
+      .upgradeTable{
+        border-collapse: separate;
+        border: none;
+        border-spacing: 5px;
+        margin: 1% auto;
+      }
+      .upgradeTd{
+        border-radius: 20px;
+        border: 1px solid white;
+        padding: 3%;
+        width: 30%;
+        letter-spacing: 1px;
       }
     </style>
   </head>
   <body>
     <div class="titleBar">
-      <img src="CivLogo.png" onclick="location.href='index.html';"><button class="titleBtn" onclick="location.href='calc.html';">Calculator</button><button class="titleBtn" onclick="location.href='rules.html';">Rules</button><button class="titleBtn"onclick="location.href='class.html';">Class Information</button>
+      <img src="CivLogo.png" onclick="location.href='index.html';" id="ttlIMG"><button class="titleBtn" onclick="location.href='calc.html';">Calculator</button><button class="titleBtn" onclick="location.href='rules.html';">Rules</button><button class="titleBtn"onclick="location.href='class.html';">Class Information</button>
+    </div>
+    <div class="toc">
+      <ol>
+        <li><a href="#civTOC">Civilizations</a></li>
+        <li><a href="#possBuilding">Buildings</a></li>
+        <li><a href="#specBuild">Special Buildings</a></li>
+        <li><a href="#econ">Economic Rules</a></li>
+        <li>Combat Rules</li>
+        <li>Diplomatic Rules</li>
+      </ol>
     </div>
 	<h2>Starting Out:</h2>
 	<ul>
@@ -45,59 +91,203 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yShadjtASaA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <table align="center" width=100%>
       <tr>
-        <th>Civilization</th>
-        <th>Bonuses</th>
+        <th id="civTOC" width="10%">Civilization</th>
+        <th>Effects</th>
       </tr>
         <td>England</td>
-	    <td></td>
+	      <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       <tr>
         <td>Ottoman Empire</td>
-        <td></td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       </tr>
         <td>Zulu</td>
-        <td>Starts with all of Africa<br>Extremely far behind technologically</td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       <tr>
         <td>Cherokee</td>
-        <td>Starts with all of North America<br>Extremely far behind technologicaly</td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       </tr>
         <td>Prussia</td>
-        <td>+3 production every turn</td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       <tr>
         <td>Sweden</td>
-        <td>+1 gold, 2 production per turn.</td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       </tr>
         <td>Austria</td>
-        <td>Starts as the Holy Roman Emperor, +2 combat strength.</td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       <tr>
         <td>Portugal</td>
-        <td>+2 tiles when sailing<br>+1 gold when trading with 2 civilizations</td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       </tr>
         <td>Russia</td>
-        <td>+3 Unit strength</td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       <tr>
         <td>France</td>
-        <td>+1 combat strength, +2 gold per turn</td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       </tr>
         <td>Japan</td>
-        <td>+1 production +2 combat strength</td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       <tr>
         <td>Poland</td>
-        <td>+1 gold from every 2 trades, and +2 gold per turn</td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       </tr>
         <td>Spain</td>
-        <td>+2 gold by trading with 3 civilizations</td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       <tr>
         <td>India</td>
-        <td>The Caste system gives India +4 production per turn<br>India starts out under Britain's control</td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       </tr>
         <td>China</td>
-        <td>+2 production per turn and +1 combat strength</td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
       <tr>
         <td>Italy</td>
-	<td>The indulgences collected by the Catholic church gives Italy +4 gold per turn<br>Italy also has the power to crown the Holy Roman Emporer</td>
+        <td>
+          <h3>Positive Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li></li>
+          </ul>
+        </td>
     </table>
     <br>
-    <h2>Possible Buildings:</h2>
+    <h2 id="possBuilding">Possible Buildings:</h2>
     <br>
     <table width="100%">
 	<tr>
@@ -142,7 +332,7 @@
         </tr>
     </table>
     <br>
-    <h2>Special Buildings:</h2>
+    <h2 id="specBuild">Special Buildings:</h2>
     <br>
     <ul>
 	<li>Unlike normal buildings, there are tiers to special buildings</li>
@@ -150,164 +340,167 @@
 	<li>Once you have completed the tier ladder for a specific special building though, you can move on to a different one.</li>
 	<li>Also, with special buildings, you can only pick one building upgrade for each tier of building</li>
     </ul>
-    <h2 id="special1">Religous:</h2>
-    <table>
-	<tr>
-                <th>Tier</th>
-                <th>Information</th>
-                <th>Cost</th>
+      <br>
+      <hr>
+      <h2>Religous:</h2>
+      <hr>
+      <div class="smallDiv">
+        <h3>Tier 1 - Temple</h3>
+        <h4>Enables you to pick the religion of your country and recieve the according positive and negative affects</h4>
+        <h3>Cost: 30 Gold</h3>
+      </div>
+      <table class="upgradeTable">
+        <tr>
+          <td class="upgradeTd">
+            <h3>Tier 2 - Church</h3>
+            <h4>Enables consessions to earn an extra 5 gold every turn</h4>
+            <h3>Cost: 40 Gold</h3>
+          </td>
+          <td class="upgradeTd">
+            <h3>Tier 2 - Reform a Church</h3>
+            <h4>You create a new version of this religion (this makes you an enemy of the original religion but the people who own the holy city of that religion). Choose 1 bonus, and 3 negative effects for your new-ish religion (talk to the game master about bonuses and negatives)</h4>
+            <h3>Cost: 50 Gold</h3>
+          </td>
+          <td class="upgradeTd">
+            <h3>Tier 2 - Militaristic Religion</h3>
+            <h4>Gain a strength bonus of +2 for all military units, and become peramnent allies with the owner of the Holy City of your religion</h4>
+            <h3>Cost: 50 Gold</h3>
+          </td>
         </tr>
         <tr>
-                <td>1 - Temple</td>
-                <td>Enables you to pick the religion of your country and recieve the according positive and negative affects</td>
-                <td>30 Gold</td>
+          <td class="upgradeTd">
+            <h3>Tier 3 - National Church</h3>
+            <h4>Due to the size, this temple generates 40 gold per turn</h4>
+            <h3>Cost: 150 Gold</h3>
+          </td>
+          <td class="upgradeTd">
+            <h3>Tier 3 - Holy City</h3>
+            <h4>You generate 40 gold per turn from the holy city, and you remove 2 negative effects of your religion</h4>
+            <h3>Cost: 250 Gold</h3>
+          </td>
+          <td class="upgradeTd">
+            <h3>Tier 3 - Inquisitor Civilization</h3>
+            <h4>Your strength bonus increases to +6, no longer pay maintenance for units. All civilizations with differing religions are now automatically enemies of the state</h4>
+            <h3>Cost: 150 Gold</h3>
+          </td>
         </tr>
-	<tr>
-		<td>2 - Church</td>
-		<td>Enables consessions to earn an extra 5 gold every turn</td>
-		<td>40 Gold</td>
-	</tr>
-	<tr>
-		<td>3 - National Church</td>
-		<td>Due to the size, this temple generates 40 gold per turn</td>
-		<td>150 gold</td>
-	</tr>
-	<tr>
-		<td>2 - Reform a Church</td>
-		<td>You create a new version of this religion (this makes you an enemy of the original religion, but the people who own the holy city of that religion). Choose 1 bonus, and 3 negative effects for your new-ish religion (talk to the game master about bonuses and negatives).</td>
-		<td>50 Gold</td>
-	</tr>
-	<tr>
-                <td>3 - Create a Holy City</td>
-                <td>You generate 40 gold per turn from the holy city, and you remove 2 negative effects of your religion.</td>
-                <td>200 Gold</td>
-        </tr>
-	<tr>
-                <td>2 - Enforce Religion with Military</td>
-		<td>Gain a strength bonus of +2 for all military units, and become peramnent allies with the owner of the Holy City of your religion</td>
-                <td>50 Gold</td>
-        </tr>
-	<tr>
-                <td>3 - Inquisitor Civilization</td>
-                <td>Your strength bonus increases to +6, no longer pay maintenance for units. All civilizations with differing religions are now automatically enemies of the state.</td>
-                <td>150 Gold</td>
-        </tr>
-    </table>
-    <br>
-    <h2 id="special2">Military:</h2>
-    <br>
-    <table>
-	<tr>
-		<th>Tier</th>
-		<th>Information</th>
-		<th>Cost</th>
-	</tr>
-	<tr>
-		<td>1 - Formal Military</td>
-		<td>With a new more organised military, every unit (naval and land) now get a +2 strength bonus. Remember that strengths like this can be used to leverage influence over other leaders</td>
-		<td>50 gold</td>
-	</tr>
-	<tr>
-		<td>2 - Naval Expertise</td>
-		<td>Naval Units recieve a +3 strength bonus on top of their previous +2 bonus; and, naval units cost 20% less to produce</td>
-		<td>150 gold</td>
-	</tr>
-	<tr>
-		<td>3 - Naval Superpower</td>
-		<td>Your navy can now move an extra 2 tiles per turn, and have an extra +3 bonus to combat strength</td>
-		<td>250 gold</td>
-	</tr>
-	<tr>
-		<td>2 - Land Expertise</td>
-		<td>Land units gain a +3 bonus to strength, and they take 20% less production to produce </td>
-		<td>150 gold</td>
-	</tr>
-	<tr>
-		<td>3 - Land Superpower</td>
-		<td>Your land units now have an extra tile of move speed, and have an extra +3 combat strength</td>
-		<td>250 gold</td>
-	</tr>
-    </table>
-    <br>
-    <h2 id="special3">Economic:</h2>
-    <br>
-    <table>
+      </table>
+      <hr>
+      <h2>Military:</h2>
+      <hr>
+      <div class="smallDiv">
+        <h3>Tier 1 - Formal Military</h3>
+        <h4>With a new more organised military, every unit (naval and land) now get a +2 strength bonus. Remember that strengths like this can be used to leverage influence over other leaders</h4>
+        <h3>Cost: 50 Gold</h3>
+      </div>
+      <table class="upgradeTable">
         <tr>
-                <th>Tier</th>
-                <th>Information</th>
-                <th>Cost</th>
+          <td class="upgradeTd" style="width: 50%;">
+            <h3>Tier 2 - Naval Expertise</h3>
+            <h4>Naval Units recieve a +3 strength bonus on top of their previous +2 bonus; and, naval units cost 20% less to produce</h4>
+            <h3>Cost: 150 Gold</h3>
+          </td>
+          <td class="upgradeTd" style="width: 50%;">
+            <h3>Tier 2 - Land Expertise</h3>
+            <h4>Land units gain a +3 bonus to strength, and they take 20% less production to produce</h4>
+            <h3>Cost: 150 Gold</h3>
+          </td>
         </tr>
         <tr>
-                <td>1 - Central Market</td>
-                <td>This would be a larger market that produces +2 Gold every turn</td>
-                <td>50 Gold</td>
+          <td class="upgradeTd" style="width: 50%;">
+            <h3>Tier 3 - Naval Superpower</h3>
+            <h4>Your navy can now move an extra 2 tiles per turn, and have an extra +3 bonus to combat strength</h4>
+            <h3>Cost: 250 Gold</h3>
+          </td>
+          <td class="upgradeTd" style="width: 50%;">
+            <h3>Tier 3 - Land Superpower</h3>
+            <h4>Your land units now have an extra tile of move speed, and have an extra +3 combat strength</h4>
+            <h3>Cost: 250 Gold</h3>
+          </td>
         </tr>
-	<tr>
-                <td>2 - Stock Exchange</td>
-                <td>Players with this tier earn +5% gold from investors in their markets</td>
-                <td>75 Gold</td>
-        </tr>
-	<tr>
-                <td>3 - Global Stock Exchange</td>
-                <td>The previous 5% gained is now 10% per turn</td>
-                <td>150 Gold</td>
-        </tr>
-	<tr>
-                <td>2 - Trade House</td>
-                <td>You get an extra 5 Gold from every trade.</td>
-                <td>75 Gold</td>
-        </tr>
-	<tr>
-                <td>3 - Customs House</td>
-                <td>Trade Units traveling through your territory, whether or not they are trading with you, must pay a fine (can be a resource of any kind). You also gain 7 gold every trade made with you.</td>
-                <td>150 Gold</td>
-        </tr>
-    </table>
-    <br>
-	  <h2 id="special4">Scientific:</h2>
-    <br>
-    <table>
+      </table>
+      <hr>
+      <h2>Economic:</h2>
+      <hr>
+      <div class="smallDiv">
+        <h3>Tier 1 - Central Market</h3>
+        <h4>This would be a larger market that produces +2 Gold every turn</h4>
+        <h3>Cost: 50 Gold</h3>
+      </div>
+      <table class="upgradeTable">
         <tr>
-                <th>Tier</th>
-                <th>Information</th>
-                <th>Cost</th>
+          <td class="upgradeTd" style="width: 50%;">
+            <h3>Tier 2 - Stock Exchange</h3>
+            <h4>Players with this tier earn +5% gold from investors in their markets</h4>
+            <h3>Cost: 75 Gold</h3>
+          </td>
+          <td class="upgradeTd" style="width: 50%;">
+            <h3>Tier 2 - Trade House</h3>
+            <h4>You get an extra 5 Gold from every trade</h4>
+            <h3>Cost: 75 Gold</h3>
+          </td>
         </tr>
         <tr>
-                <td>1 - Library</td>
-                <td>the vast array of knowledge at your disposal gives you an extra 1 science per turn</td>
-                <td>100 gold</td>
+          <td class="upgradeTd" style="width: 50%;">
+            <h3>Tier 3 - Global Stock Exchange</h3>
+            <h4>The previous 5% gained is now 10% per turn</h4>
+            <h3>Cost: 150 Gold</h3>
+          </td>
+          <td class="upgradeTd" style="width: 50%;">
+            <h3>Tier 3 - Customs House</h3>
+            <h4>Trade Units traveling through your territory, whether or not they are trading with you, must pay a fine (can be a resource of any kind). You also gain 7 gold every trade made with you</h4>
+            <h3>Cost: 150 Gold</h3>
+          </td>
         </tr>
-	<tr>
-                <td>2 - Simple Machinery</td>
-                <td>New technology allows you to mesh more science with basic tasks to make them take less time/energy. Increase production of every production-based building by 2 per turn</td>
-                <td>150 gold</td>
+      </table>
+      <hr>
+      <h2>Scientific:</h2>
+      <hr>
+      <div class="smallDiv">
+        <h3>Tier 1 - Library</h3>
+        <h4>The vast array of knowledge at your disposal gives you an extra 1 science per turn</h4>
+        <h3>Cost: 100 Gold</h3>
+      </div>
+      <table class="upgradeTable">
+        <tr>
+          <td class="upgradeTd">
+            <h3>Tier 2 - Simple Machinery</h3>
+            <h4>New technology allows you to mesh more science with basic tasks to make them take less time/energy. Increase production of every production-based building by 2 per turn</h4>
+            <h3>Cost: 150 Gold</h3>
+          </td>
+          <td class="upgradeTd">
+            <h3>Tier 2 - Scientific Weaponry</h3>
+            <h4>The cutting edge technology you own gives all of your units a +1 strength bonus, and allows them to move an extra tile</h4>
+            <h3>Cost: 100 Gold</h3>
+          </td>
+          <td class="upgradeTd">
+            <h3>Tier 2 - Scientific Method</h3>
+            <h4>The Scientific method improves the rate and the veriety of producing new ideas. This in turn increases the rate of scientific production (+3 science per turn on top of previous bonuses)</h4>
+            <h3>Cost: 120 Gold</h3>
+          </td>
         </tr>
-	<tr>
-                <td>3 - Advanced Machinery</td>
-                <td>More scientific advances have allowed your civilization to decrease the usage of energy/time. Increase the amount of production per building by 5 on top of the previous bonus</td>
-                <td>150 gold</td>
+        <tr>
+          <td class="upgradeTd">
+            <h3>Tier 3 - Advanced Machinery</h3>
+            <h4>More scientific advances have allowed your civilization to decrease the usage of energy/time. Increase the amount of production per building by 5 on top of the previous bonus</h4>
+            <h3>Cost: 150 Gold</h3>
+          </td>
+          <td class="upgradeTd">
+            <h3>Tier 3 - Advanced Scientific Weaponry</h3>
+            <h4>The cost of science when purchasing military technology is reduced by 2, and you have an extra 1 tile movement on top of the previous bonus</h4>
+            <h3>Cost: 200 Gold</h3>
+          </td>
+          <td class="upgradeTd">
+            <h3>Tier 3 - World Library</h3>
+            <h4>The support of the scientific community has allowed your country to recieve a one of a kind library. Every time a unit trades with you, you recieve 1 science</h4>
+            <h3>Cost: 200 Gold</h3>
+          </td>
         </tr>
-	<tr>
-                <td>2 - Scientific Weaponry</td>
-                <td>The cutting edge technology you own gives all of your units a +1 strength bonus, and allows them to move an extra tile.</td>
-                <td>100 gold</td>
-        </tr>
-	<tr>
-                <td>3 - Advanced Scientific Weaponry</td>
-                <td>The cost of science when purchasing military technology is reduced by 2, and you have an extra 1 tile movement on top of the previous bonus.</td>
-                <td>200 Gold</td>
-        </tr>
-	<tr>
-                <td>2 - Scientific Method</td>
-                <td>The Scientific method improves the rate and the veriety of producing new ideas. This in turn increases the rate of scientific production (+3 science per turn on top of previous bonuses)</td>
-                <td>120 Gold</td>
-        </tr>
-	<tr>
-                <td>3 - World Library</td>
-                <td>The support of the scientific community has allowed your country to recieve a one of a kind library. Every time a unit trades with you, you recieve 1 science.</td>
-                <td>200 Gold</td>
-        </tr>
-    </table>
+      </table>
+      <h2 id="econ">Economic Rules:</h2>
+      <h4><span style="font-size: 20px; letter-spacing: 1px;">Gold</span> is the first type of currency and is also the most common currency.</h4>
+      <br>
+      <h4><span style="font-size: 20px; letter-spacing: 1px;">Production</span></h4>
     <script>
 	var img = document.querySelector("img");
 
