@@ -93,8 +93,8 @@
           prevAmnt.textContent = Math.round(totalGold);
         });
         submit[1].addEventListener("click", function(){
-          var stockGold = Math.round(parseInt(input[3].value)/100 * totalGold);
-          stockAmount.textContent = stockGold + totalGold;
+          var stockGold = parseInt(input[3].value)/100 * totalGold
+          stockAmount.textContent = Math.round(stockGold) + Math.round(totalGold);
         });
   </script>
   </body>
