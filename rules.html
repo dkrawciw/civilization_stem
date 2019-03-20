@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <title>Civilization Simulation</title>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="icon" type="image/png" href="CivLogo.png">
@@ -62,6 +61,26 @@
         width: 30%;
         letter-spacing: 1px;
       }
+      .projectDiv{
+        width: 70%;
+        border: 1px solid white;
+        border-radius: 20px;
+        margin: 1% auto;
+        padding: 1%;
+      }
+      .tileDiv{
+        border: 2px solid white;
+        border-radius: 40px;
+        padding: 5%;
+        margin: 1% auto;
+        width: 50%;
+      }
+      ul{
+        list-style-position: inside;
+      }
+      .unitTable{
+        width: 80%;
+      }
     </style>
   </head>
   <body>
@@ -73,9 +92,11 @@
         <li><a href="#civTOC">Civilizations</a></li>
         <li><a href="#possBuilding">Buildings</a></li>
         <li><a href="#specBuild">Special Buildings</a></li>
+        <li><a href="#specProjects">Special Projects</a></li>
         <li><a href="#econ">Economic Rules</a></li>
-        <li>Combat Rules</li>
-        <li>Diplomatic Rules</li>
+        <li><a href="#combat">Combat Rules</a></li>
+        <li><a href="#diplomat">Diplomatic Rules</a></li>
+        <li><a href="#extra">Extra Rules</a></li>
       </ol>
     </div>
 	<h2>Starting Out:</h2>
@@ -83,7 +104,7 @@
 		<li>Find out who out of your class is going to be a leader (there needs to be exactly 6 people)</li>
 		<li>WARNING: Some people may already be leaders, check the Class Information tab to find out!</li>
 		<li>After leaders are chosen, people who aren't leaders must flock to a leader (try to distribute the non-leaders as evenly as possible)</li>
-		<li>Now, in order of thos on the list of leaders, pick a country! Be warned though, countries have different strengths and weaknesses</li>
+		<li>Now, in order of those on the list of leaders, pick a country! Be warned though, countries have different strengths and weaknesses</li>
 		<li>After every leader has chosen their civilization, have them email me: their civilization, a new civilization name, a summary of what their civilization is about<br>email me at daniel.krawciw@s.stemk12.org</li>
 		<li>Every civilization now recieves 5 gold and what their civization would earn in one turn<br>You can find how much one would earn in one turn by going to the Calculator tab, and adding your civilization's bonus (if it has one)</li>
 	</ul>
@@ -94,6 +115,7 @@
         <th id="civTOC" width="10%">Civilization</th>
         <th>Effects</th>
       </tr>
+      <tr>
         <td>England</td>
 	      <td>
           <h3>Positive Effects:</h3>
@@ -103,9 +125,10 @@
           </ul>
           <h3>Negative Effects:</h3>
           <ul>
-            <li>Starts with -50 Gold (Can not be justified as reformation unless debt goes up)</li>
+            <li>Starts with -50 Gold (Can not be justified for a reformation unless debt goes up)</li>
           </ul>
         </td>
+      </tr>
       <tr>
         <td>Ottoman Empire</td>
         <td>
@@ -121,6 +144,7 @@
           </ul>
         </td>
       </tr>
+      <tr>
         <td>Zulu</td>
         <td>
           <h3>Positive Effects:</h3>
@@ -132,6 +156,7 @@
             <li>Science status is at 10</li>
           </ul>
         </td>
+      </tr>
       <tr>
         <td>Cherokee</td>
         <td>
@@ -146,6 +171,7 @@
           </ul>
         </td>
       </tr>
+      <tr>
         <td>Prussia</td>
         <td>
           <h3>Positive Effects:</h3>
@@ -154,6 +180,7 @@
             <li>+2 Combat Strength (Lasts for 7 turns)</li>
           </ul>
         </td>
+      </tr>
       <tr>
         <td>Sweden</td>
         <td>
@@ -164,6 +191,7 @@
           </ul>
         </td>
       </tr>
+      <tr>
         <td>Austria</td>
         <td>
           <h3>Positive Effects:</h3>
@@ -172,6 +200,7 @@
             <li>+3 combat strength (Lasts for 4 turns)</li>
           </ul>
         </td>
+      </tr>
       <tr>
         <td>Portugal</td>
         <td>
@@ -180,8 +209,13 @@
             <li>Begins with the Common Market</li>
             <li>+1 tile movement of non-military units in the water</li>
           </ul>
+          <h3>Negative Effects:</h3>
+          <ul>
+            <li>Begins with an addiction so bad with sugar, any trade of sugar made to them requires that they pay 6 Gold every unit of sugar</li>
+          </ul>
         </td>
       </tr>
+      <tr>
         <td>Russia</td>
         <td>
           <h3>Positive Effects:</h3>
@@ -194,6 +228,7 @@
             <li>Begins with -20 Gold</li>
           </ul>
         </td>
+      </tr>
       <tr>
         <td>France</td>
         <td>
@@ -203,71 +238,75 @@
           </ul>
         </td>
       </tr>
+      <tr>
         <td>Japan</td>
         <td>
           <h3>Positive Effects:</h3>
           <ul>
-            <li>The Bushido gives Japan a perminent +2 combat strenth</li>
+            <li>+3 strength (lasts for 7 turns)</li>
           </ul>
         </td>
+      </tr>
       <tr>
         <td>Poland</td>
         <td>
           <h3>Positive Effects:</h3>
           <ul>
-            <li></li>
-          </ul>
-          <h3>Negative Effects:</h3>
-          <ul>
-            <li></li>
+            <li>+2 strength (lasts for 4 turns)</li>
+            <li>+3 gold per turn (lasts for 3 turns)</li>
           </ul>
         </td>
       </tr>
+      <tr>
         <td>Spain</td>
         <td>
           <h3>Positive Effects:</h3>
           <ul>
-            <li></li>
+            <li>Starts with a significant portion of South/North America</li>
           </ul>
           <h3>Negative Effects:</h3>
           <ul>
-            <li></li>
+            <li>Begins with -50 Gold (Not cause for reformation unless gold goes further down)</li>
           </ul>
         </td>
+      </tr>
       <tr>
         <td>India</td>
         <td>
           <h3>Positive Effects:</h3>
           <ul>
-            <li></li>
+            <li>Under protection from Britain</li>
+            <li>+4 Goldd per turn (lasts for 6 turns)</li>
+            <li>Starts with three land units</li>
           </ul>
           <h3>Negative Effects:</h3>
           <ul>
-            <li></li>
+            <li>Due to chaos in this country, this country cannot produce military troops (lasts for 3 turns)</li>
           </ul>
         </td>
       </tr>
+      <tr>
         <td>China</td>
         <td>
           <h3>Positive Effects:</h3>
           <ul>
-            <li></li>
-          </ul>
-          <h3>Negative Effects:</h3>
-          <ul>
-            <li></li>
+            <li>+4 Gold per turn (lasts for 3 turns)</li>
+            <li>+3 Production per turn (lasts for 4 turns)</li>
+            <li>Can build the special project The Forbidden City (costs 20 Gold, and 20 production). If completed, you gain an extra +5 gold per turn</li>
           </ul>
         </td>
+      </tr>
       <tr>
         <td>Italy</td>
         <td>
           <h3>Positive Effects:</h3>
           <ul>
-            <li></li>
+            <li>Can elect the Holy Roman Emperor (can only change the emperor once per turn) Look at the rules on the HRE to find out more</li>
           </ul>
           <h3>Negative Effects:</h3>
           <ul>
-            <li></li>
+            <li>Begins as enemies with the Ottoman Empire</li>
+            <li>Starts with -15 Gold (Is not justification for reformation unless it goes further down)</li>
           </ul>
         </td>
     </table>
@@ -482,10 +521,297 @@
           </td>
         </tr>
       </table>
-      <h2 id="econ">Economic Rules:</h2>
-      <h4><span style="font-size: 20px; letter-spacing: 1px;">Gold</span> is the first type of currency and is also the most common currency.</h4>
+      <hr>
+      <h2 id="specProjects">Special Projects:</h2>
+      <hr>
+      <div class="projectDiv">
+        <h2>Circumnavigation</h2>
+        <h4>Requires Tier 2 Science</h4>
+      </div>
+      <div class="projectDiv">
+        <h2>New World Mercantilism</h2>
+        <h4>Requires Tier 2 Science</h4>
+      </div>
+      <div class="projectDiv">
+        <h2>African Mercantilism</h2>
+        <h4>Requires Tier 2 Science</h4>
+      </div>
+      <div class="projectDiv">
+        <h2>Viva la Revolución</h2>
+        <h4>Requires Tier 2 Science</h4>
+      </div>
+      <div class="projectDiv">
+        <h2>Lord of War</h2>
+        <h4>Requires Tier 4 Science</h4>
+      </div>
+      <div class="projectDiv">
+        <h2>Terror of the Seas</h2>
+        <h4>Requires Tier 4 Science</h4>
+      </div>
+      <div class="projectDiv">
+        <h2>A New Age</h2>
+        <h4>Requires Tier 4 Science</h4>
+      </div>
+      <div class="projectDiv">
+        <h2>A Poisonous Personality</h2>
+        <h4>Requires Tier 4 Science</h4>
+      </div>
       <br>
-      <h4><span style="font-size: 20px; letter-spacing: 1px;">Production</span></h4>
+      <h2 id="econ">Economic Rules:</h2>
+      <h3>Economies of civilizations is generally free of rules except for a few:</h3>
+      <h4><span style="font-size: 20px; letter-spacing: 1px;">Gold</span> is the first type of currency and is also the most common currency. This currency can be given, traded, or lost. The point is that it is incredibly versatile. The yellow coins are worth 1, while the red coins are worth 20.</h4>
+      <h4><span style="font-size: 20px; letter-spacing: 1px;">Production</span> is the second type of currency that is utilized in this simulation. This coin is worth less than the average coin, and it <strong style="font-size: 20px; text-decoration: underline;">can not</strong> be traded, given away, or lost. Yellow coins are worth 1, while the red coins are worth 15.</h4>
+      <br>
+      <h2>Wealth of Tiles:</h2>
+      <table class="upgradeTable" style="width: 80%;">
+        <tr>
+          <td style="background-color: #004417; color: white;" class="tileDiv">
+            <h3>Deep Forest</h3>
+            <h4>+2 Production per Turn</h4>
+          </td>
+          <td style="background-color: #165F96; color: white;" class="tileDiv">
+            <h3>Ocean</h3>
+            <h4>+2 Production per Turn</h4>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #096522; color: white;" class="tileDiv">
+            <h3>Forest</h3>
+            <h4>+3 Production per Turn</h4>
+          </td>
+          <td style="background-color: #009F2D; color: white;" class="tileDiv">
+            <h3>Grassland</h3>
+            <h4>+2 Production per Turn</h4>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: white; color: black;" class="tileDiv">
+            <h3>Tundra</h3>
+            <h4>+1 Production per Turn</h4>
+          </td>
+          <td style="background-color: #EE9131; color: black;" class="tileDiv">
+            <h3>Mesopotamia</h3>
+            <h4>+4 Production per Turn</h4>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #E5CD00; color: black;" class="tileDiv">
+            <h3>Plains</h3>
+            <h4>+3 Production per Turn</h4>
+          </td>
+          <td style="background-color: #999999; color: black;" class="tileDiv">
+            <h3>Mountains</h3>
+            <h4>+4 Production per Turn</h4>
+          </td>
+        </tr>
+    </table>
+
+
+    <hr>
+    <h2 id="combat">Combat Rules:</h2>
+    <hr>
+
+    <div class="projectDiv">
+      <h2>Combat Units:</h2>
+      <h3>Calvary Units:</h3>
+        <table class="unitTable">
+          <tr>
+            <th>Unit</th>
+            <th>Information</th>
+          </tr>
+          <tr>
+            <td>Basic Horsemen</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Knights</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Dragoon</td>
+            <td></td>
+          </tr>
+        </table>
+      <h3>Canon Units:</h3>
+      <table class="unitTable">
+        <tr>
+          <th>Unit</th>
+          <th>Information</th>
+        </tr>
+        <tr>
+          <td>Canons</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Artillary</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Tanks</td>
+          <td></td>
+        </tr>
+      </table>
+      <h3>Archer-type Units:</h3>
+      <table class="unitTable">
+        <tr>
+          <th>Unit</th>
+          <th>Information</th>
+        </tr>
+        <tr>
+          <td>Archers</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Crossbowmen</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Machine Gunmen</td>
+          <td></td>
+        </tr>
+      </table>
+      <h3>Battalion Units:</h3>
+      <table class="unitTable">
+        <tr>
+          <th>Unit</th>
+          <th>Information</th>
+        </tr>
+        <tr>
+          <td>Warriors</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Swordsmen</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Musketmen</td>
+          <td>
+            <ul>
+              <li>Tier 3 Unit</li>
+              <li>Strength: 6</li>
+              <li>Cost: 10 Gold and 1 iron</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Riflemen</td>
+          <td>
+            <ul>
+              <li>Tier 4 Unit</li>
+              <li>Strength: 8</li>
+              <li>Cost: 10 Gold and 1 iron</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Infantry</td>
+          <td>
+            <ul>
+              <li>Tier 5 Unit</li>
+              <li>Strength: 10</li>
+              <li>Cost: 15 Gold and 1 iron</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <h3>Light-Ship Units (Although they weren't meant for war, they can attack):</h3>
+      <table class="unitTable">
+        <tr>
+          <th>Unit</th>
+          <th>Information</th>
+        </tr>
+        <tr>
+          <td>Caravel</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Viceoroy</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Steam Ships</td>
+          <td></td>
+        </tr>
+      </table>
+      <h3>Battleship Units:</h3>
+      <table class="unitTable">
+        <tr>
+          <th>Unit</th>
+          <th>Information</th>
+        </tr>
+        <tr>
+          <td>Galleon</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Frigate</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Irionclads</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Destroyer</td>
+          <td></td>
+        </tr>
+      </table>
+      <h3>Light-Aircraft Units:</h3>
+      <table class="unitTable">
+        <tr>
+          <th>Unit</th>
+          <th>Information</th>
+        </tr>
+        <tr>
+          <td>Fighter Plane</td>
+          <td></td>
+        </tr>
+      </table>
+      <h3>Bombing-Aircraft Units:</h3>
+      <table class="unitTable">
+        <tr>
+          <th>Unit</th>
+          <th>Information</th>
+        </tr>
+        <tr>
+          <td>Hot Air Balloon</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Zeppelin</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="projectDiv">
+      <h2>Attacking other Units:</h2>
+    </div>
+
+    <div class="projectDiv">
+      <h2>Attacking Unmoving Tiles (Sieges):</h2>
+    </div>
+
+    <div class="projectDiv">
+      <h2>Defending:</h2>
+    </div>
+
+
+    <hr>
+    <h2 id="diplomat">Diplomacy Rules:</h2>
+    <hr>
+    <h2>Trading:</h2>
+    <div class="projectDiv">
+      <h3>Trading is very simple, you just have to remember to only trade what resources you have. You can, however, trade more money than you own, but this may be a poor idea as you would go into bankruptcy (you can only go down to -50 gold before you are out of the game).</h3>
+      <h2>Example:</h2>
+
+    </div>
+
+
+    <hr>
+    <h2 id="extra">Extra Rules:</h2>
+    <hr>
     <script>
 	var img = document.querySelector("img");
 
