@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <title>Civilization Simulation</title>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="icon" type="image/png" href="CivLogo.png">
     <link rel="stylesheet" href="app.css">
     <style>
 	.inp{
+    font-family: 'Josefin Sans', sans-serif;
 		border: 1px solid white;
 		background: none;
 		color: white;
@@ -44,6 +44,21 @@
     border-radius: 20px;
     padding: 3%;
   }
+  select{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background: none;
+    border: 1px solid white;
+    padding: 0.5%;
+    margin: 1%;
+    outline: none;
+  }
+  option{
+    background-color: black;
+  }
+  label,h2{
+    letter-spacing: 1px;
+  }
     </style>
   </head>
   <body>
@@ -74,6 +89,34 @@
         <button class="btnSubmit">Submit</button>
         <h2>Gold After Stock Exchange: <span id="stockBtn"></span></h2>
     </div>
+    <br>
+    <br>
+    <br>
+    <div class="inpDiv">
+      <h1>Combat Calculator</h1>
+      <label for="comb1">Your Unit Combat Strength:</label>
+      <input type="number" class="inp" id="comb1" value="0" min="0">
+      <label>Amount of Units:</label>
+      <input type="number" class="inp" value="0" min="0">
+      <label>Your Bonuses:</label>
+      <input type="number" class="inp" value="0" min="0">
+      <br>
+      <br>
+      <br>
+      <br>
+      <label for="comb2">The Enemy's Unit Strength:</label>
+      <input type="number" class="inp" id="comb2" value="0" min="0">
+      <label>Amount of Units:</label>
+      <input type="number" class="inp" value="0" min="0">
+      <label>Enemy Bonuses:</label>
+      <input type="number" class="inp" value="0" min="0">
+      <br>
+      <button class="btnSubmit">Submit</button>
+      <h2>Your Strength: <span class="a_d"></span></h2>
+      <h2>Enemy Strength: <span class="a_d"></span></h2>
+      <br>
+      <h2 id="combResult"></h2>
+  </div>
   <script>
         var img = document.querySelector("img");
 
@@ -87,6 +130,11 @@
         var stockAmount = document.querySelector("#stockBtn");
         var totalGold = 0;
 
+        var attack = document.querySelector("#attack");
+        var defend = document.querySelector("#defend");
+        var combResult = document.querySelector("#combResult");
+        var ad = document.querySelectorAll(".a_d");
+
         submit[0].addEventListener("click", function(){
           totalGold = 2 * Math.sqrt(parseInt(input[0].value) * parseInt(input[1].value)) + parseInt(input[2].value);
           place.textContent = Math.round(totalGold);
@@ -95,6 +143,39 @@
         submit[1].addEventListener("click", function(){
           var stockGold = parseInt(input[3].value)/100 * totalGold
           stockAmount.textContent = Math.round(stockGold) + Math.round(totalGold);
+        });
+        submit[2].addEventListener("click", function(){
+          var aChance = Math.round(Math.random() * 6);
+          var dChance = Math.round(Math.random() * 6);
+
+          var aResult = (parseInt(input[4].value) + parseInt(input[6].value)) * parseInt(input[5].value) + aChance;
+          var dResult = (parseInt(input[7].value) + parseInt(input[9].value)) * parseInt(input[8].value) + dChance;
+
+          var aEnd = aResult;
+          var aDeath = 0;
+
+          var dEnd = dResult;
+          var dDeath = 0;
+
+          ad[0].textContent = aResult;
+          ad[1].textContent = dResult;
+
+          for(var y = 0; y < parseInt(input[8].value); y++){
+            if(aEnd >= parseInt(input[7].value) + parseInt(input[9].value) + dChance){
+              aEnd = aEnd - (parseInt(input[7].value) + parseInt(input[9].value) + dChance);
+              dDeath++;
+            }
+          }
+          var aEnd = aResult;
+          var dEnd = dResult;
+
+          for(var z = 0; z < parseInt(input[5].value); z++){
+            if(dEnd >= parseInt(input[4].value) + parseInt(input[6].value) + aChance){
+              dEnd = dEnd - (parseInt(input[4].value) + parseInt(input[6].value) + aChance);
+              aDeath++;
+            }
+          }
+          combResult.innerHTML = "Your loss: " + aDeath + " unit(s)<br><br>Opponent loss: " + dDeath + " unit(s)";
         });
   </script>
   </body>
