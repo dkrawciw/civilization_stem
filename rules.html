@@ -314,46 +314,46 @@
     <h2 id="possBuilding">Possible Buildings:</h2>
     <br>
     <table width="100%">
-	<tr>
-		<th>Buildings</th>
-		<th>Bonuses</th>
-		<th>Costs</th>
-	</tr>
-	<tr>
-		<td>Barracks</td>
-		<td>Barracks decreases the cost of units by 20%</td>
-		<td>30 Gold</td>
-	</tr>
-	<tr>
-		<td>Forge</td>
-		<td>Increases the yield of production by +3 every turn</td>
-		<td>20 Gold</td>
-	</tr>
-	<tr>
-                <td>Walls</td>
-                <td>Increases the tile strength of the 6 tiles surrounding your city, along with the city itself by +3 strength</td>
-                <td>50 Gold</td>
-        </tr>
-	<tr>
-                <td>Mines</td>
-                <td>Allows one to utilize a minable resource in a specific tile</td>
-                <td>20 Gold</td>
-        </tr>
-	<tr>
-                <td>Stables</td>
-                <td>Increases production by +1 yield, and increases combat strength of certain units (the unit will indicate if applicable)</td>
-                <td>30 Gold</td>
-        </tr>
-	<tr>
-                <td>Shipyard</td>
-                <td>Increases trade from ocean +1 gold, and allows ship units to take 20% less prodcution to produce.</td>
-                <td>40 Gold</td>
-        </tr>
-	<tr>
-                <td>Common Market</td>
-                <td>Increases yield of gold +1</td>
-                <td>35 Gold</td>
-        </tr>
+    	<tr>
+    		<th>Buildings</th>
+    		<th>Bonuses</th>
+    		<th>Costs</th>
+    	</tr>
+    	<tr>
+    		<td>Barracks</td>
+    		<td></td>
+    		<td>18 Gold or 36 Production</td>
+    	</tr>
+    	<tr>
+    		<td>Forge</td>
+    		<td>+3 Production for the city tile</td>
+    		<td>10 Gold or 20 Production</td>
+    	</tr>
+    	<tr>
+        <td>Walls</td>
+        <td>This structure's strength is dependant on the tier of science you are at. This structure must be destroyed by the enemy before they can take your city or attack the units garrisoned in your city. Once this structure is destroyed, it is no longer a building in your city until built again.</td>
+        <td>20 Gold or 40 Production</td>
+      </tr>
+    	<tr>
+        <td>Mines</td>
+        <td>Allows one to utilize a minable resource in a specific tile</td>
+        <td>15 Gold or 30 Production</td>
+      </tr>
+    	<tr>
+        <td>Stables</td>
+        <td>+3 production in cities where this is built</td>
+        <td>10 Gold or 20 Production</td>
+      </tr>
+    	<tr>
+        <td>Shipyard</td>
+        <td>Increases trade from ocean +1 gold.</td>
+        <td>10 Gold or 20 Production</td>
+      </tr>
+    	<tr>
+        <td>Common Market</td>
+        <td>+1 gold when trading with you in cities in which this is built</td>
+        <td>10 Gold or 20 Production</td>
+      </tr>
     </table>
     <br>
     <h2 id="specBuild">Special Buildings:</h2>
@@ -523,38 +523,45 @@
       </table>
       <hr>
       <h2 id="specProjects">Special Projects:</h2>
+      <h4>Each of these tasks are only achievable once per class</h4>
       <hr>
       <div class="projectDiv">
         <h2>Circumnavigation</h2>
-        <h4>Requires Tier 2 Science</h4>
+        <h4>Requires Tier 3 Science</h4>
+        <h3>Using a Frigate or a Caravel, go all the way around the world and back to your starting city. You must spend 10 gold to initiate this project.</h3>
+        <br>
+        <h2>Reward: 30 Gold</h2>
       </div>
       <div class="projectDiv">
         <h2>New World Mercantilism</h2>
-        <h4>Requires Tier 2 Science</h4>
+        <h4>Requires Tier 3 Science</h4>
+        <h3>Create three plantations of sugar and get three European countries (not including you) addicted to sugar.</h3>
+        <br>
+        <h2>Reward: 30 Gold</h2>
       </div>
       <div class="projectDiv">
         <h2>African Mercantilism</h2>
-        <h4>Requires Tier 2 Science</h4>
+        <h4>Requires Tier 3 Science</h4>
       </div>
       <div class="projectDiv">
         <h2>Viva la Revolución</h2>
-        <h4>Requires Tier 2 Science</h4>
+        <h4>Requires Tier 3 Science</h4>
       </div>
       <div class="projectDiv">
         <h2>Lord of War</h2>
-        <h4>Requires Tier 4 Science</h4>
+        <h4>Requires Tier 5 Science</h4>
       </div>
       <div class="projectDiv">
         <h2>Terror of the Seas</h2>
-        <h4>Requires Tier 4 Science</h4>
+        <h4>Requires Tier 5 Science</h4>
       </div>
       <div class="projectDiv">
         <h2>A New Age</h2>
-        <h4>Requires Tier 4 Science</h4>
+        <h4>Requires Tier 5 Science</h4>
       </div>
       <div class="projectDiv">
         <h2>A Poisonous Personality</h2>
-        <h4>Requires Tier 4 Science</h4>
+        <h4>Requires Tier 5 Science</h4>
       </div>
       <br>
       <h2 id="econ">Economic Rules:</h2>
@@ -575,8 +582,8 @@
           </td>
         </tr>
         <tr>
-          <td style="background-color: #096522; color: white;" class="tileDiv">
-            <h3>Forest</h3>
+          <td style="background-color: #E5CD00; color: black;" class="tileDiv">
+            <h3>Plains</h3>
             <h4>+3 Production per Turn</h4>
           </td>
           <td style="background-color: #009F2D; color: white;" class="tileDiv">
@@ -594,16 +601,14 @@
             <h4>+4 Production per Turn</h4>
           </td>
         </tr>
-        <tr>
-          <td style="background-color: #E5CD00; color: black;" class="tileDiv">
-            <h3>Plains</h3>
-            <h4>+3 Production per Turn</h4>
-          </td>
-          <td style="background-color: #999999; color: black;" class="tileDiv">
-            <h3>Mountains</h3>
-            <h4>+4 Production per Turn</h4>
-          </td>
-        </tr>
+    </table>
+    <table class="upgradeTable" style="width: 80%; margin-top: -1%;">
+      <tr>
+        <td style="background-color: #999999; color: black;" class="tileDiv">
+          <h3>Mountains</h3>
+          <h4>+4 Production per Turn</h4>
+        </td>
+      </tr>
     </table>
 
 
@@ -621,15 +626,42 @@
           </tr>
           <tr>
             <td>Basic Horsemen</td>
-            <td></td>
+            <td>
+              <ul>
+                <li>Tier 1 Unit</li>
+                <li>Strength: 4</li>
+                <li>Cost: 10 Gold</li>
+                <li>Base Movement: 5 Tiles per Turn</li>
+                <li>Get no bonuses from fortifying</li>
+                <li>Maintenance: 2 Production per turn</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>Knights</td>
-            <td></td>
+            <td>
+              <ul>
+                <li>Tier 2 Unit</li>
+                <li>Strength: 6</li>
+                <li>Cost: 15 Gold and 1 iron</li>
+                <li>Base Movement: 5 Tiles per Turn</li>
+                <li>Get no bonuses from fortifying</li>
+                <li>Maintenance: 2 Production per turn</li>
+              </ul>
+            </td>
           </tr>
           <tr>
             <td>Dragoon</td>
-            <td></td>
+            <td>
+              <ul>
+                <li>Tier 3 Unit</li>
+                <li>Strength: 8</li>
+                <li>Cost: 25 Gold and 1 iron</li>
+                <li>Base Movement: 6 Tiles per Turn</li>
+                <li>Get no bonuses from fortifying</li>
+                <li>Maintenance: 2 Production per turn</li>
+              </ul>
+            </td>
           </tr>
         </table>
       <h3>Canon Units:</h3>
@@ -640,15 +672,42 @@
         </tr>
         <tr>
           <td>Canons</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 3 Unit</li>
+              <li>Strength: 6</li>
+              <li>Cost: 15 Gold and 1 iron</li>
+              <li>+2 strength against fortified units</li>
+              <li>Base Movement: 4 Tile per Turn</li>
+              <li>Maintenance: 3 Production per turn</li>
+            </ul>
+          </td>
         </tr>
         <tr>
           <td>Artillary</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 4 Unit</li>
+              <li>Strength: 8</li>
+              <li>Cost: 20 Gold and 1 iron</li>
+              <li>+3 strength against fortified units</li>
+              <li>Base Movement: 4 Tile per Turn</li>
+              <li>Maintenance: 3 Production per turn</li>
+            </ul>
+          </td>
         </tr>
         <tr>
           <td>Tanks</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 5 Unit</li>
+              <li>Strength: 10</li>
+              <li>Cost: 25 Gold, 1 iron, and 1 coal</li>
+              <li>+4 strength against fortified units</li>
+              <li>Base Movement: 5 Tiles per Turn</li>
+              <li>Maintenance: 3 Production, and 1 coal per turn</li>
+            </ul>
+          </td>
         </tr>
       </table>
       <h3>Archer-type Units:</h3>
@@ -659,15 +718,42 @@
         </tr>
         <tr>
           <td>Archers</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 1 Unit</li>
+              <li>Strength: 1</li>
+              <li>Cost: 2 Gold</li>
+              <li>When attacking, they take no damage</li>
+              <li>Base Movement: 4 Tile per Turn</li>
+              <li>Maintenance: 2 Production per turn</li>
+            </ul>
+          </td>
         </tr>
         <tr>
           <td>Crossbowmen</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 2 Unit</li>
+              <li>Strength: 3</li>
+              <li>Cost: 5 Gold</li>
+              <li>When attacking, they take no damage</li>
+              <li>Base Movement: 4 Tile per Turn</li>
+              <li>Maintenance: 2 Production per turn</li>
+            </ul>
+          </td>
         </tr>
         <tr>
           <td>Machine Gunmen</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 5 Unit</li>
+              <li>Strength: 12</li>
+              <li>Cost: 25 Gold and 2 iron</li>
+              <li>When attacking, they take no damage</li>
+              <li>Base Movement: 5 Tile per Turn</li>
+              <li>Maintenance: 3 Production per turn</li>
+            </ul>
+          </td>
         </tr>
       </table>
       <h3>Battalion Units:</h3>
@@ -678,11 +764,27 @@
         </tr>
         <tr>
           <td>Warriors</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 1 Unit</li>
+              <li>Strength: 2</li>
+              <li>Cost: 2 Gold</li>
+              <li>Base Movement: 4 Tile per Turn</li>
+              <li>Maintenance: 1 Production per two turns</li>
+            </ul>
+          </td>
         </tr>
         <tr>
           <td>Swordsmen</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 2 Unit</li>
+              <li>Strength: 3</li>
+              <li>Cost: 5 Gold and 1 iron</li>
+              <li>Base Movement: 4 Tile per Turn</li>
+              <li>Maintenance: 1 Production per turn</li>
+            </ul>
+          </td>
         </tr>
         <tr>
           <td>Musketmen</td>
@@ -691,6 +793,8 @@
               <li>Tier 3 Unit</li>
               <li>Strength: 6</li>
               <li>Cost: 10 Gold and 1 iron</li>
+              <li>Base Movement: 5 Tiles per Turn</li>
+              <li>Maintenance: 1 Production per turn</li>
             </ul>
           </td>
         </tr>
@@ -700,7 +804,9 @@
             <ul>
               <li>Tier 4 Unit</li>
               <li>Strength: 8</li>
-              <li>Cost: 10 Gold and 1 iron</li>
+              <li>Cost: 15 Gold and 1 iron</li>
+              <li>Base Movement: 5 Tiles per Turn</li>
+              <li>Maintenance: 2 Production per turn</li>
             </ul>
           </td>
         </tr>
@@ -710,12 +816,14 @@
             <ul>
               <li>Tier 5 Unit</li>
               <li>Strength: 10</li>
-              <li>Cost: 15 Gold and 1 iron</li>
+              <li>Cost: 20 Gold and 1 iron</li>
+              <li>Base Movement: 6 Tiles per Turn</li>
+              <li>Maintenance: 3 Production per turn</li>
             </ul>
           </td>
         </tr>
       </table>
-      <h3>Light-Ship Units (Although they weren't meant for war, they can attack):</h3>
+      <h3>Light-Ship Units:</h3>
       <table class="unitTable">
         <tr>
           <th>Unit</th>
@@ -723,15 +831,39 @@
         </tr>
         <tr>
           <td>Caravel</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 2 Unit</li>
+              <li>Strength: 5</li>
+              <li>Cost: 15 Gold and 1 iron</li>
+              <li>Base Movement: 5 Tiles per Turn</li>
+              <li>Maintenance: 3 Production per turn</li>
+            </ul>
+          </td>
         </tr>
         <tr>
           <td>Viceoroy</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 3 Unit</li>
+              <li>Strength: 6</li>
+              <li>Cost: 20 Gold and 1 iron</li>
+              <li>Base Movement: 6 Tiles per Turn</li>
+              <li>Maintenance: 3 Production per turn</li>
+            </ul>
+          </td>
         </tr>
         <tr>
           <td>Steam Ships</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 4 Unit</li>
+              <li>Strength: 7</li>
+              <li>Cost: 15 Gold, 1 iron, and 1 coal</li>
+              <li>Base Movement: 8 Tiles per Turn</li>
+              <li>Maintenance: 4 Production and 1 coal per turn</li>
+            </ul>
+          </td>
         </tr>
       </table>
       <h3>Battleship Units:</h3>
@@ -742,19 +874,51 @@
         </tr>
         <tr>
           <td>Galleon</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 2 Unit</li>
+              <li>Strength: 7</li>
+              <li>Cost: 20 Gold and 2 iron</li>
+              <li>Base Movement: 4 Tiles per Turn</li>
+              <li>Maintenance: 3 Production per turn</li>
+            </ul>
+          </td>
         </tr>
         <tr>
           <td>Frigate</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 3 Unit</li>
+              <li>Strength: 8</li>
+              <li>Cost: 23 Gold and 2 iron</li>
+              <li>Base Movement: 5 Tiles per Turn</li>
+              <li>Maintenance: 3 Production and 1 coal per turn</li>
+            </ul>
+          </td>
         </tr>
         <tr>
-          <td>Ironclads</td>
-          <td></td>
+          <td>Irionclads</td>
+          <td>
+            <ul>
+              <li>Tier 4 Unit</li>
+              <li>Strength: 10</li>
+              <li>Cost: 25 Gold, 2 iron, and 1 coal</li>
+              <li>Base Movement: 7 Tiles per Turn</li>
+              <li>Maintenance: 3 Production and 1 coal per turn</li>
+            </ul>
+          </td>
         </tr>
         <tr>
           <td>Destroyer</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 5 Unit</li>
+              <li>Strength: 12</li>
+              <li>Cost: 30 Gold, 3 iron, and 3 coal</li>
+              <li>Base Movement: 8 Tiles per Turn</li>
+              <li>Maintenance: 4 Production and 2 coal per turn</li>
+            </ul>
+          </td>
         </tr>
       </table>
       <h3>Light-Aircraft Units:</h3>
@@ -765,7 +929,16 @@
         </tr>
         <tr>
           <td>Fighter Plane</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 5 Unit</li>
+              <li>Strength: 6</li>
+              <li>Cost: 15 Gold, 2 iron, and 1 coal</li>
+              <li>Base Movement: 4 Tiles per Turn</li>
+              <li>Maintenance: 3 Production and 1 coal per turn</li>
+              <li>Can attack from two tiles away</li>
+            </ul>
+          </td>
         </tr>
       </table>
       <h3>Bombing-Aircraft Units:</h3>
@@ -776,11 +949,27 @@
         </tr>
         <tr>
           <td>Hot Air Balloon</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 4 Unit</li>
+              <li>Strength: 4</li>
+              <li>Cost: 15 Gold</li>
+              <li>Base Movement: 4 Tiles per Turn</li>
+              <li>Maintenance: 2 Production per turn</li>
+            </ul>
+          </td>
         </tr>
         <tr>
           <td>Zeppelin</td>
-          <td></td>
+          <td>
+            <ul>
+              <li>Tier 5 Unit</li>
+              <li>Strength: 8</li>
+              <li>Cost: 20 Gold, 2 iron, and 1 coal</li>
+              <li>Base Movement: 4 Tiles per Turn</li>
+              <li>Maintenance: 4 Production and 1 coal per turn</li>
+            </ul>
+          </td>
         </tr>
       </table>
     </div>
@@ -793,22 +982,72 @@
       <h2>Attacking Unmoving Tiles (Sieges):</h2>
     </div>
 
-    <div class="projectDiv">
-      <h2>Defending:</h2>
-    </div>
-
 
     <hr>
     <h2 id="diplomat">Diplomacy Rules:</h2>
     <hr>
     <h2>Trading:</h2>
+    <h3>Trading/Settler Unit Information:</h3>
+    <table class="unitTable">
+      <tr>
+        <th>Unit</th>
+        <th>Information</th>
+      </tr>
+      <tr>
+        <td>Tier 1</td>
+        <td>
+          <ul>
+            <li>Base Movement: 4 Tiles per turn</li>
+            <li>Strength: 0</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Tier 2</td>
+        <td>
+          <ul>
+            <li>Base Movement: 4 Tiles per turn</li>
+            <li>Strength: 0</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Tier 3</td>
+        <td>
+          <ul>
+            <li>Base Movement: 5 Tiles per turn</li>
+            <li>Strength: 2</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Tier 4</td>
+        <td>
+          <ul>
+            <li>Base Movement: 5 Tiles per turn</li>
+            <li>Strength: 3</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Tier 5</td>
+        <td>
+          <ul>
+            <li>Base Movement: 6 Tiles per turn</li>
+            <li>Strength: 3</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
     <div class="projectDiv">
+      <h2>Trading Units are Free (You can only have a maximum of <span style="text-decoration: underline;">4</span> at a time)</h2>
       <h3>Trading is very simple, you just have to remember to only trade what resources you have. You can, however, trade more money than you own, but this may be a poor idea as you would go into bankruptcy (you can only go down to -50 gold before you are out of the game).</h3>
-      <h2>Example:</h2>
-
     </div>
-
-
+    <br>
+    <div class="projectDiv">
+      <h2>Each settler costs: 15 Gold or 30 Production</h2>
+      <h3>Once you buy a settler, move it to the location in which you would like to found a new city at, and expend the unit for a city tile. If available, the tiles around it become apart of your territory.</h3>
+    </div>
     <hr>
     <h2 id="extra">Extra Rules:</h2>
     <hr>
