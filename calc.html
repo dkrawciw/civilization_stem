@@ -65,7 +65,7 @@
     <div class="titleBar">
       <img src="CivLogo.png" onclick="location.href='index.html';" id="ttlIMG"><button class="titleBtn" onclick="location.href='calc.html';">Calculator</button><button class="titleBtn" onclick="location.href='rules.html';">Rules</button><button class="titleBtn"onclick="location.href='class.html';">Class Information</button>
     </div>
-    <div class="inpDiv">
+    <div class="inpDiv" id="div1">
         <h1>Default Gold Per Turn Calculator</h1>
         <label for="inp1">Number of Cities:</label>
         <input type="number" class="inp" value="0" min="0">
@@ -96,7 +96,7 @@
       <h1>Combat Calculator</h1>
       <label for="comb1">Your Unit Combat Strength:</label>
       <input type="number" class="inp" id="comb1" value="0" min="0">
-      <label>Amount of Units:</label>
+      <label>Number of Units:</label>
       <input type="number" class="inp" value="0" min="0">
       <label>Your Bonuses:</label>
       <input type="number" class="inp" value="0" min="0">
@@ -106,7 +106,7 @@
       <br>
       <label for="comb2">The Enemy's Unit Strength:</label>
       <input type="number" class="inp" id="comb2" value="0" min="0">
-      <label>Amount of Units:</label>
+      <label>Number of Units:</label>
       <input type="number" class="inp" value="0" min="0">
       <label>Enemy Bonuses:</label>
       <input type="number" class="inp" value="0" min="0">
@@ -175,7 +175,7 @@
               aDeath++;
             }
           }
-          combResult.innerHTML = "Your loss: " + aDeath + " unit(s)<br><br>Opponent loss: " + dDeath + " unit(s)";
+          combResult.innerHTML = "Your loss: " + aDeath + " unit(s)<br><br>Enemy loss: " + dDeath + " unit(s)";
         });
   </script>
   </body>
