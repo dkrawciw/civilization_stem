@@ -15,11 +15,14 @@ html{
   background-color: #DFDFDF;
 }
 body{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Cinzel', serif;
     color: #F0EFF4;
     margin: 0;
     background-color: #003554;
     text-align: center;
+}
+hr{
+  border: 1px solid #F0EFF4;
 }
 .titleBar{
   background-color: #F0EFF4;
@@ -42,19 +45,24 @@ iframe{
 }
 #ttlIMG{
   width: 7.2%;
-  padding-left: 1%;
+  padding: 1%;
   transition: 0.3s;
   float: left;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
 }
 #ttlIMG:hover{
   cursor: pointer;
-  margin-left: 0.4%;
+  background-color: #F0EFF4;
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  padding-bottom: 1.5%;
 }
 button{
   padding: 1%;
   border: none;
   background: none;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Cinzel', serif;
   font-weight: 700;
   font-size: 100%;
   margin-left: 4%;
